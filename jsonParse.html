@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JSON Parse</title>
+
+
+    
+
+    <script>
+
+        function Parse() {
+            var string = prompt("Write and JSON object");
+            var out = "";
+            mySelf = JSON.parse(string);
+            for (x in mySelf) {
+                out += "My Self: " + x + "= " + mySelf[x] + '\n';
+            }
+            alert(out);
+        }
+    </script>
+</head>
+
+<body onload="Parse()">
+    <h2>This is the description</h2>
+</body>
+</html>
