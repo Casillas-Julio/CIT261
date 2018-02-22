@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Title</title>
+<script type="text/javascript">
+
+	// 		L03 COVERING
+	// ------------------------
+	// Loops, 
+	// Conditional Statements, 
+	// Functions, 
+	// Variables, 
+	// Parameters, 
+	// Arrays, 
+	// Associative Arrays
+	// ------------------------	
+
+
+	/* 
+	* Input:
+	* Processing:
+	* Output:
+	*/
+	function template(){
+		var one = parseFloat ( document.getElementById('one').value );
+		var two = parseFloat ( document.getElementById('two').value );
+		var output = one + two;
+		
+		document.getElementById('output').innerHTML = output;
+	}
+</script>
+</head>
+
+<body>
+	<h1>Template Heading</h1> 
+	Please enter two numbers:
+	<input type="text" id="one" size="5">
+	<input type="text" id="two" size="5">
+	<button type="button" onclick="template()">Click</button>
+	<div id="output"></div>
+</body>
+</html>
