@@ -49,7 +49,7 @@ CREATE TABLE IF NOT EXISTS `passwordsApp`.`Profiles` (
   `Username` VARCHAR(20) NOT NULL,
   `Password` VARCHAR(20) NOT NULL,
   `Email` VARCHAR(20) NULL,
-  `Notes` VARCHAR(20) NULL,
+  `Notes` VARCHAR(200) NULL,
   `Account_accountID` INT NOT NULL,
   PRIMARY KEY (`ProfileID`),
   INDEX `fk_Profiles_Account_idx` (`Account_accountID` ASC),
