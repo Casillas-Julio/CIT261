@@ -7,6 +7,7 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 -- -----------------------------------------------------
 -- Schema passwordsApp
 -- -----------------------------------------------------
+DROP SCHEMA IF EXISTS `passwordsApp` ;
 
 -- -----------------------------------------------------
 -- Schema passwordsApp
@@ -17,6 +18,8 @@ USE `passwordsApp` ;
 -- -----------------------------------------------------
 -- Table `passwordsApp`.`Account`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `passwordsApp`.`Account` ;
+
 CREATE TABLE IF NOT EXISTS `passwordsApp`.`Account` (
   `accountID` INT NOT NULL AUTO_INCREMENT,
   `masterUsername` VARCHAR(20) NOT NULL,
@@ -38,6 +41,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `passwordsApp`.`Profiles`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `passwordsApp`.`Profiles` ;
+
 CREATE TABLE IF NOT EXISTS `passwordsApp`.`Profiles` (
   `ProfileID` INT NOT NULL AUTO_INCREMENT,
   `Profile Name` VARCHAR(20) NOT NULL,
